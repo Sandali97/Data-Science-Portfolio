@@ -134,7 +134,7 @@ The dataset is stored in the SAS library `Bank` under the table name `Transactio
   
 <img width="1143" height="691" alt="image" src="https://github.com/user-attachments/assets/5368089b-119d-41e5-9c4c-020b45f44476" />
 
-# Fraud Analysis Results
+### Fraud Analysis Results
 
 The following chart shows the number of accounts identified as fraud using different approaches:
 
