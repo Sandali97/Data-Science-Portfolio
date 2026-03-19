@@ -1,4 +1,4 @@
-# Sandali Prathibhani Portfolio
+# Sandali Prathibhani 
 
 Welcome to my portfolio! Here you can explore some of the projects I have worked on in **data science, machine learning, and analytics**.  
 
