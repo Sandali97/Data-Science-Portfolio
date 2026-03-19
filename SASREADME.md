@@ -14,7 +14,7 @@ to identify high-risk accounts and suspicious transactions.
 ##### 🎯 Objective
 
 - Detect anomalous and potentially fraudulent transactions
-- Identify high-risk accounts based on transaction behavior
+- Identify high-risk accounts based on transaction behavior 
 - Use unsupervised learning to segment customers by fraud risk
 
 ##### 📊 Dataset
