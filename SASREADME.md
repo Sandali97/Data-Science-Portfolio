@@ -122,8 +122,22 @@ The dataset is stored in the SAS library `Bank` under the table name `Transactio
 329 AccountIDs are high risk as it is identified as fraud accounts in multiple transactions.
 
 
-#### Unsupervised Learning - Clustering----------------------------------------------------------------------------------------------------------------------------
+#### Unsupervised Learning - Clustering--------------------------------------------------------------------------------------------------------------
 
+- Standardized Transaction Data
+      Variables are standardized using **PROC STDIZE** with range normalization.
+- K-means clustering is applied using **PROC FASTCLUS** with 3 clusters.
+- Risk Categorization: Clusters are mapped to fraud risk levels:
+    Cluster 2 → Low Risk
+    Cluster 1 → Medium Risk
+    Cluster 3 → High Risk
+  
+<img width="1143" height="691" alt="image" src="https://github.com/user-attachments/assets/5368089b-119d-41e5-9c4c-020b45f44476" />
 
+# Fraud Analysis Results
+
+The following chart shows the number of accounts identified as fraud using different approaches:
+
+<img width="1156" height="696" alt="image" src="https://github.com/user-attachments/assets/5660c140-feab-4b8d-a9cf-b377aea19464" />
 
   
