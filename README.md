@@ -14,7 +14,7 @@ Throughout my career, I’ve worked on real-world datasets across geo spatial, t
 
 Here’s a summary of my key projects. Click on the project name to explore the details, code, and results.
 
-1. **[Fraud Detection in Banking](./Project-3_Fraud_Detection)**  
+1. **[Fraud Detection in Banking](./Bank-Transaction-Fraud-Detection-SAS)**  
 - **Objective:** Detect fraudulent transactions using unsupervised learning and EDA.  
 - **Tech Stack:** Python, SAS, Pandas, Matplotlib  
 - **Highlights:**
@@ -23,7 +23,7 @@ Here’s a summary of my key projects. Click on the project name to explore the 
    -    Compared results from statistical methods and clustering models
    -    Visualized fraud distribution and anomaly behavior
         
-2. **[Customer Churn Prediction](./Project-3_Fraud_Detection)**
+2. **[Customer Churn Prediction](./Telecom-Customer-Churn-Prediction)**
 - **Objective:** Predict customer churn and identify key factors driving customer attrition
 - **Tech Stack:** Python, Scikit-learn, Pandas, Seaborn, Matplotlib
 - **Highlights:**
