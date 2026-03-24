@@ -27,7 +27,12 @@ Here’s a summary of my key projects. Click on the project name to explore the 
 - **Objective:** Predict customer churn and identify key factors driving customer attrition
 - **Tech Stack:** Python, Scikit-learn, Pandas, Seaborn, Matplotlib
 - **Highlights:**
-   -   Built classification models to predict churn
+   -   Built classification models: KNN, SVC, Decision Tree, Random Forest, Logistic Regression, XGBoost to predict churn
    -   Conducted comprehensive EDA on customer demographics, services, and billing
    -   Identified key drivers such as contract type, tenure, and monthly charges
    -   Improved model performance using feature engineering and tuning
+
+3.  **[Personal Bank Loan Classification](./Telecom-Customer-Churn-Prediction)**
+   - **Objective:** Identify the potential customers who have a higher probability of purchasing the loan
+   - **Tech Stack:** Python, Pandas, Numpy, Matplotlib, sklearn, Seaborn
+   - **Highlights:**
