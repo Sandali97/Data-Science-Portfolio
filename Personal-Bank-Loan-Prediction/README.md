@@ -80,8 +80,13 @@ Customers with high incomes are more likely to purchase a personal loan.
 <img width="650" height="400" alt="image" src="https://github.com/user-attachments/assets/f1edd063-709c-454c-ad54-6d8de56e54f5" />
 
 Customers who spend more on credit cards are more likely to take out personal loans.
+In the dataset, CCAVG represents average monthly credit card spending, but Income represents the amount of annual income.
+To make the units of the features equal, we convert average monthly credit card spending to annual.
 
+#### Distribution of the Target Variable
 
+<img width="650" height="400" alt="image" src="https://github.com/user-attachments/assets/5dc21ce9-5a81-4706-8927-17f6a1aded1f" />
 
+Distribution of the Personal Loan shows imbalance as majority of customers did not accept the Personal Loan compared to the ones who accepted the Loan.
 
 
