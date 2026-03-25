@@ -23,7 +23,7 @@ Here’s a summary of my key projects. Click on the project name to explore the 
    -    Compared results from statistical methods and clustering models
    -    Visualized fraud distribution and anomaly behavior
         
-**2**. **[Customer Churn Prediction](./Telecom-Customer-Churn-Prediction)**
+**2**. **[Telecom Customer Churn Prediction](./Telecom-Customer-Churn-Prediction)**
 - **Objective:** Predict customer churn and identify key factors driving customer attrition
 - **Tech Stack:** Python, Scikit-learn, Pandas, Seaborn, Matplotlib
 - **Highlights:**
