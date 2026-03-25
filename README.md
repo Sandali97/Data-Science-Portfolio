@@ -14,7 +14,7 @@ Throughout my career, I’ve worked on real-world datasets across geo spatial, t
 
 Here’s a summary of my key projects. Click on the project name to explore the details, code, and results.
 
-**1**. **[Fraud Detection in Banking](./Bank-Transaction-Fraud-Detection-SAS)**  
+**1**. **[Fraud Detection in Banking using SAS](./Bank-Transaction-Fraud-Detection-SAS)**  
 - **Objective:** Detect fraudulent transactions using unsupervised learning and EDA.  
 - **Tech Stack:** Python, SAS, Pandas, Matplotlib  
 - **Highlights:**
