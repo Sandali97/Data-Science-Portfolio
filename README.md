@@ -14,7 +14,7 @@ Throughout my career, I’ve worked on real-world datasets across geo spatial, t
 
 Here’s a summary of my key projects. Click on the project name to explore the details, code, and results.
 
-**1**. **[Fraud Detection in Banking using SAS](./Bank-Transaction-Fraud-Detection-SAS)**  
+**1**. **[💳Fraud Detection in Banking using SAS](./Bank-Transaction-Fraud-Detection-SAS)**  
 - **Objective:** Detect fraudulent transactions using unsupervised learning and EDA.  
 - **Tech Stack:** Python, SAS, Pandas, Matplotlib  
 - **Highlights:**
@@ -23,7 +23,7 @@ Here’s a summary of my key projects. Click on the project name to explore the 
    -    Compared results from statistical methods and clustering models
    -    Visualized fraud distribution and anomaly behavior
         
-**2**. **[Telecom Customer Churn Prediction](./Telecom-Customer-Churn-Prediction)**
+**2**. **[📉Telecom Customer Churn Prediction Using Python](./Telecom-Customer-Churn-Prediction)**
 - **Objective:** Predict customer churn and identify key factors driving customer attrition
 - **Tech Stack:** Python, Scikit-learn, Pandas, Seaborn, Matplotlib
 - **Highlights:**
@@ -32,7 +32,7 @@ Here’s a summary of my key projects. Click on the project name to explore the 
    -   Identified key drivers such as contract type, tenure, and monthly charges
    -   Improved model performance using feature engineering and tuning
 
-**3**.  **[Personal Bank Loan Classification](./Personal-Bank-Loan-Prediction)**
+**3**.  **[💼Personal Bank Loan Classification Using Python](./Personal-Bank-Loan-Prediction)**
    - **Objective:** Identify the potential customers who have a higher probability of purchasing the loan
    - **Tech Stack:** Python, Pandas, Numpy, Matplotlib, sklearn, Seaborn
    - **Highlights:**
@@ -41,3 +41,13 @@ Here’s a summary of my key projects. Click on the project name to explore the 
       - Built and evaluated multiple machine learning models(KNN, Logistic Regression, Random Forest) to predict loan acceptance.
       - Used hyperparameter tuning, feature selection, and model evaluation metrics.
       - Focused on F1-score for class 1 (loan customers) as the key metric to balance correctly identifying potential borrowers while minimizing false positives.
+    
+**4**. **[🍽️ Food Expenditure Analysis of Filipino Families Using R](./Predict-Food-Expenses)**
+   - **Objective:** Analyze and predict food expenditure patterns based on socio-economic factors
+   - **Tech Stack:** R, Statistical Modeling, Data Visualization
+   - **Highlights:**
+      - Performed data preprocessing and outlier treatment
+      - Conducted EDA to analyze income, family size, and expenditure patterns
+      - Applied regression techniques (Ridge, Lasso, Elastic Net, Linear, PCR, PLS)
+      - Identified key drivers of Rice, Bread, and Cereal expenditure
+      - Compared multiple models to select the best-performing approach
