@@ -111,6 +111,7 @@ The Samples are randomly divided in a way that proportion of each category remai
 3. Standardize Numerical Features: 'Age','Income','Family'	,'CCAvg','Mortgage'
 4. Fit Models
    - **Logistic Regression**
+     
      #### Baseline Model (No Tuning, No Feature Selection) - 95% Accuracy
       | Class       | Precision | Recall | F1-Score | 
       | ----------- | --------- | ------ | -------- | 
@@ -141,10 +142,10 @@ The Samples are randomly divided in a way that proportion of each category remai
  - **Random Forest Classifer**
    
      #### Baseline Model (No Tuning, No Feature Selection) - 99% Accuracy
-       | Class       | Precision | Recall | F1-Score | 
-       | ----------- | --------- | ------ | -------- |
-       | 0 (No Loan) | 0.99      | 1.0    | 0.99     |
-       | 1 (Loan)    | 0.99      | 0.87   | 0.93     |
+      | Class       | Precision | Recall | F1-Score | 
+      | ----------- | --------- | ------ | -------- | 
+      | 0 (No Loan) | 0.99      | 1.0    | 0.99     | 
+      | 1 (Loan)    | 0.99      | 0.87   | 0.93     |
 
      The baseline Random Forest model already performs very well, achieving near-perfect classification for the majority class (No Loan) and strong performance for the minority class (Loan) with an F1-score of 0.93.
 
@@ -165,4 +166,44 @@ The Samples are randomly divided in a way that proportion of each category remai
 
      Applying feature selection further improved recall for class 1 (0.92) and slightly increased precision, raising the F1-score to 0.95. This indicates that Random Forest can still perform well even with fewer, more relevant features.
 
+ - **KNN Model**   
     
+    #### Baseline Model (No Tuning, No Feature Selection) - 91% Accuracy
+
+   | Class       | Precision | Recall | F1-Score | 
+   | ----------- | --------- | ------ | -------- | 
+   | 0 (No Loan) | 0.91      | 1.0    | 0.95     | 
+   | 1 (Loan)    | 0.50      | 0.03   | 0.06     |
+
+     The baseline KNN model achieves good performance for the majority class (No Loan) but struggles significantly with the minority class (Loan), with very low recall (0.03) and F1-score (0.06), indicating it fails to identify most potential borrowers.
+    
+   #### After Hyperparameter Tuning ✅ - 92% Accuracy
+   | Class       | Precision | Recall | F1-Score | 
+   | ----------- | --------- | ------ | -------- | 
+   | 0 (No Loan) | 0.93      | 0.99   | 0.96     | 
+   | 1 (Loan)    | 0.72      | 0.21   | 0.32     |
+
+     Hyperparameter tuning improves KNN’s ability to detect loan customers, increasing recall from 0.03 → 0.21 and F1-score from 0.06 → 0.32, while maintaining strong performance for the majority class.
+    
+        
+   #### After Tuning + Feature Selection ⚠️ - 98% Accuracy
+   | Class       | Precision | Recall | F1-Score | 
+   | ----------- | --------- | ------ | -------- | 
+   | 0 (No Loan) | 0.98      | 1.00   | 0.99     | 
+   | 1 (Loan)    | 0.94      | 0.77   | 0.85     |
+
+    Applying feature selection significantly boosts performance for the minority class (Loan), with recall improving to 0.77 and F1-score to 0.85. This shows that KNN benefits greatly from relevant features and proper tuning.
+
+### ✅ Conclusion
+| Model                    | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) | Key Insight                                                                            |
+| ------------------------ | -------- | ------------------- | ---------------- | ------------------ | -------------------------------------------------------------------------------------- |
+| Logistic Regression      | 94–95%   | 0.73–0.75           | 0.56–0.60        | 0.64–0.66          | Moderate ability to detect loan customers; baseline and interpretable model.           |
+| Random Forest Classifier | 99%      | 0.97–0.98           | 0.90–0.92        | 0.93–0.95          | Best for identifying potential loan customers; handles imbalance and generalizes well. |
+| KNN                      | 91–98%   | 0.72–0.94           | 0.21–0.77        | 0.32–0.85          | Sensitive to features; improves with tuning and selection but still slightly below RF. |
+
+**For this scenario** — targeting potential loan customers in an imbalanced dataset — the Random Forest Classifier is the best choice:
+
+- It achieves the highest F1-score for class 1 (0.95), balancing recall and precision effectively.
+- Maintains excellent overall accuracy (99%) while correctly identifying most potential borrowers.
+- Less sensitive to irrelevant features, robust to overfitting, and easily interpretable in terms of feature importance.
+   
