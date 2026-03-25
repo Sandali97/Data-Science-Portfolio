@@ -14,7 +14,7 @@ Throughout my career, I’ve worked on real-world datasets across geo spatial, t
 
 Here’s a summary of my key projects. Click on the project name to explore the details, code, and results.
 
-1. **[Fraud Detection in Banking](./Bank-Transaction-Fraud-Detection-SAS)**  
+**1**. **[Fraud Detection in Banking](./Bank-Transaction-Fraud-Detection-SAS)**  
 - **Objective:** Detect fraudulent transactions using unsupervised learning and EDA.  
 - **Tech Stack:** Python, SAS, Pandas, Matplotlib  
 - **Highlights:**
@@ -23,7 +23,7 @@ Here’s a summary of my key projects. Click on the project name to explore the 
    -    Compared results from statistical methods and clustering models
    -    Visualized fraud distribution and anomaly behavior
         
-2. **[Customer Churn Prediction](./Telecom-Customer-Churn-Prediction)**
+**2**. **[Customer Churn Prediction](./Telecom-Customer-Churn-Prediction)**
 - **Objective:** Predict customer churn and identify key factors driving customer attrition
 - **Tech Stack:** Python, Scikit-learn, Pandas, Seaborn, Matplotlib
 - **Highlights:**
@@ -32,7 +32,12 @@ Here’s a summary of my key projects. Click on the project name to explore the 
    -   Identified key drivers such as contract type, tenure, and monthly charges
    -   Improved model performance using feature engineering and tuning
 
-3.  **[Personal Bank Loan Classification](./Telecom-Customer-Churn-Prediction)**
+**3**.  **[Personal Bank Loan Classification](./Personal-Bank-Loan-Prediction)**
    - **Objective:** Identify the potential customers who have a higher probability of purchasing the loan
    - **Tech Stack:** Python, Pandas, Numpy, Matplotlib, sklearn, Seaborn
    - **Highlights:**
+      - Performed data cleaning and preprocessing, including handling negative experience values, outlier treatment, and converting monthly credit card spend to annual.
+      - Conducted exploratory data analysis (EDA) to understand customer demographics, financial behavior, and relationships between variables.
+      - Built and evaluated multiple machine learning models(KNN, Logistic Regression, Random Forest) to predict loan acceptance.
+      - Used hyperparameter tuning, feature selection, and model evaluation metrics.
+      - Focused on F1-score for class 1 (loan customers) as the key metric to balance correctly identifying potential borrowers while minimizing false positives.
