@@ -41,8 +41,19 @@ Here’s a summary of my key projects. Click on the project name to explore the 
       - Built and evaluated multiple machine learning models(KNN, Logistic Regression, Random Forest) to predict loan acceptance.
       - Used hyperparameter tuning, feature selection, and model evaluation metrics.
       - Focused on F1-score for class 1 (loan customers) as the key metric to balance correctly identifying potential borrowers while minimizing false positives.
-    
-**4**. **[🍽️ Food Expenditure Analysis of Filipino Families Using R](./Predict-Food-Expenses)**
+
+**4**. **[📊 Bank Marketing Response Analysis Using SAS Viya-Model Studio](./Bank-Marketing-Response-SASViya)**
+      
+   - **Objective:** Predict customer responses to bank marketing campaigns and identify key factors influencing term deposit subscriptions.
+   - **Tech Stack:** SAS Model Studio (Viya), Logistic Regression, Decision Trees, Random Forest, Gradient Boosting
+   - **Highlights:**
+        - Built and compared multiple classification models for campaign response prediction  
+        - Identified top predictors using Random Forest variable importance (`duration`, `month`, `poutcome`, `age`, `contact`)  
+        - Recommended targeted marketing strategies to improve ROI  
+        - Generated actionable insights and visualizations for key decision-making
+          
+
+**5**. **[🍽️ Food Expenditure Analysis of Filipino Families Using R](./Predict-Food-Expenses)**
    - **Objective:** Analyze and predict food expenditure patterns based on socio-economic factors
    - **Tech Stack:** R, Statistical Modeling, Data Visualization
    - **Highlights:**
