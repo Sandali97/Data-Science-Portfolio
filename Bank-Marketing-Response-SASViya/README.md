@@ -43,6 +43,8 @@ The dataset contains real data from a Portuguese bank’s marketing campaigns.
 
 #### 1. Data Node
 - Load the CSV dataset into the pipeline.
+- Change Data Types.
+- Define Target and Input Variables.
 
 #### 2. Preprocessing
 - **Imputation Node:** Handles missing values and `unknown` categories.
