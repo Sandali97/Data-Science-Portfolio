@@ -13,6 +13,7 @@ This project demonstrates how to predict Customer Lifetime Value (CLV) using Ran
 #### 📁Dataset 
 
 Kaggle: https://www.kaggle.com/datasets/harunrai/fintech-customer-life-time-value-ltv-dataset
+
 The dataset contains  7,000 observations with 20 features, capturing customer demographics, transaction history, engagement metrics, app usage patterns, and support interactions. 
 It is designed to help predict Customer Lifetime Value (LTV) for users of digital wallets, such as PayTM and Khalti.
 
@@ -119,3 +120,33 @@ Above scatter plots represent a classic RFM (Recency, Frequency, Monetary) frame
 **Frequency:** Positive Correlation. As transaction counts increase, the "floor" for LTV rises. More frequent shoppers generally result in higher lifetime value, though the spread (variance) is wide.
 
 **Monetary:** Perfect Correlation. This is a straight line because "Total Spent" is likely how you calculated LTV. It’s your most powerful (and perhaps redundant) feature for this specific calculation.
+
+
+##### Engagement & Experience Impact
+
+<img width="1108" height="303" alt="image" src="https://github.com/user-attachments/assets/66565aa2-2838-420e-a1ae-9ba76db9151e" />
+
+**Customer Satisfaction:** There's no clear relationship between satisfaction and LTV as the median LTV stays almost flat for all statisfaction scores. This means High satisfaction doesn't guarantee a high-value customer, and low satisfaction doesn't necessarily mean low spend. "Happy" customers aren't outspending "unhappy" ones.
+
+**App Usage Frequency:** How often a customer opens your app has zero correlation with how much they spend over their lifetime.
+
+**Support Tickets Raised:** Whether a customer has raised 0 tickets or 20, the LTV distribution remains consistent.
+
+According to the above plot, these 3 variables are week predictors of LTV. 
+
+##### Relationships between service interactions and satisfaction
+
+<img width="500" height="389" alt="image" src="https://github.com/user-attachments/assets/8f993993-a895-426f-b3f3-15b7bcc7c354" />
+
+###### All scatterplots look uniform, with data spread horizontally across the x-axis but concentrated in discrete bands vertically.
+###### No clear positive or negative correlation is visible at a glance.
+###### This suggests that Customer Satisfaction Score is mostly independent of these individual behavioral metrics (at least linearly).
+
+
+##### 02. 🚀 Advanced Analysis 
+
+Since the distribution of the response variable indicates a skewed spread, Log transformation should apply to obtain more accurate outputs.
+
+<img width="611" height="448" alt="image" src="https://github.com/user-attachments/assets/e1a379dc-f371-4212-80f8-601caa19137a" />
+
+
