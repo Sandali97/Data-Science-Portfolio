@@ -63,7 +63,7 @@ It is designed to help predict Customer Lifetime Value (LTV) for users of digita
 - Check Duplicates
 - Check Multicollinearity
     
-##### 02. 🔍 Exploratory Data Analysis 
+#### 02. 🔍 Exploratory Data Analysis 
 - Identify the relationship between features
 
   <img width="800" height="529" alt="image" src="https://github.com/user-attachments/assets/b190d690-de75-4e58-9b63-df11b3521bd2" />
@@ -143,10 +143,61 @@ According to the above plot, these 3 variables are week predictors of LTV.
 ###### This suggests that Customer Satisfaction Score is mostly independent of these individual behavioral metrics (at least linearly).
 
 
-##### 02. 🚀 Advanced Analysis 
+#### 02. 🚀 Advanced Analysis 
+
+###### Apply Log Transformation on Target
 
 Since the distribution of the response variable indicates a skewed spread, Log transformation should apply to obtain more accurate outputs.
 
-<img width="611" height="448" alt="image" src="https://github.com/user-attachments/assets/e1a379dc-f371-4212-80f8-601caa19137a" />
+<img width="500" height="389" alt="image" src="https://github.com/user-attachments/assets/ef317f9d-7c75-41c2-b40c-9727f609a629" />
 
+<img width="500" height="389" alt="image" src="https://github.com/user-attachments/assets/b1980919-b583-4f1b-bc9d-2b2fd9edc649" />
+
+###### Encode Categorical Variables
+
+<img width="1112" height="413" alt="image" src="https://github.com/user-attachments/assets/ab0ba40f-de6f-4884-aba8-a72664ebb121" />
+
+###### Split the Dataset into Train and Test
+
+###### Standardized Variables
+To ensure all numerical features contribute equally to the model, standardization was applied using StandardScaler. This transformation rescales the features to have a mean of 0 and a standard deviation of 1.
+
+###### Fit Models
+
+| Model                  | R²        | MSE       | RMSE      | MAPE      |
+| ---------------------- | --------- | --------- | --------- | --------- |
+| Ridge Regression       | 0.816     | 0.254     | 0.503     | 0.367     |
+| Lasso Regression       | 0.809     | 0.263     | 0.513     | 0.373     |
+| Elastic Net Regression | 0.809     | 0.254     | 0.504     | 0.365     |
+| Random Forest          | **0.994** | **0.007** | **0.032** | **0.032** |
+
+###### 📈 Key Insights
+
+🌲 Random Forest significantly outperforms all linear models, achieving an R² of 0.994, indicating near-perfect prediction capability.
+ 
+ - **Random Forest Baseline Model :**  Initial model trained using default hyperparameters to establish a performance benchmark.
+ 
+ - **Random Forest Tuned Model** 
+
+   Hyperparameters were optimized using cross-validation to improve model performance.
+
+   Best hyperparameters: {'n_estimators': 1000, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'log2', 'max_depth': None}
+   
+ - **Random Forest Tuned Model with Important Features** 
+
+    <img width="500" height="355" alt="image" src="https://github.com/user-attachments/assets/bd93c448-cedb-49e8-b4fe-9d51874a31bb" />
+
+    The model was retrained using only the most important features(Importance>0.06) identified through feature importance analysis. This helps:
+
+        Reduce model complexity
+        Improve interpretability
+        Maintain high predictive performance
+
+📉 Error metrics (MSE, RMSE, MAPE) are extremely low for Random Forest, showing very high accuracy.
+
+📊 Linear models (Ridge, Lasso, Elastic Net) perform similarly, with R² around 0.81, suggesting:
+
+The relationship between features and LTV is not purely linear
+
+There are likely nonlinear interactions captured better by Random Forest
 
