@@ -82,8 +82,40 @@ It is designed to help predict Customer Lifetime Value (LTV) for users of digita
   ###### Total_Spent, Avg_Transaction_Value, Total_Transactions, Max/Min_Transaction_Value are highly correlated.
   ###### Using all in a linear regression could cause instability.
 
-- Explore Customer Demographics
+##### Explore Customer Demographics
 
 <img width="500" height="372" alt="image" src="https://github.com/user-attachments/assets/acc3d9bd-c5fc-4fe0-bbfa-94b1ca71018a" /><img width="500" height="372" alt="image" src="https://github.com/user-attachments/assets/3f71c4c1-ac74-4875-9b8c-5657b6e9b1c8" />
 
-  
+ Age of customers distributed from 10 -70 and the histogram shows a multimodal distribution, indicating that there are multiple distinct age groups among customers.
+ This suggests that the digital wallet platform is used by different segments. 
+ 
+ In the distribution of Income Level by Location,The data shows a relatively even spread, with most counts falling between 730 and 830. Notably:
+ - Urban areas have the highest count of Low income individuals.
+ - Rural areas have the highest count of High income individuals.
+ - Middle income counts are very similar across all three locations, each hovering around 800.
+
+##### Explore Transaction Indicators
+
+  <img width="1115" height="323" alt="image" src="https://github.com/user-attachments/assets/b2b2cdd1-ecd4-494b-b452-afa3cab34df0" />
+Total Transactions and Avg Transaction value plots highlights an uniform distribution showcasing the even spread of customers.
+
+When analyzing Max transaction value and min transaction value, it's noticable that the customers with high maximum transaction values also tend to have high minimum transaction values, indicating that their transaction range is consistently high.This pattern suggests that high-spending customers maintain consistently larger transaction amounts, which could be a strong indicator of higher Customer Lifetime Value (CLV).
+
+##### Relationship b/w Transactions and Expenditures
+<img width="1111" height="319" alt="image" src="https://github.com/user-attachments/assets/8e7eda26-f736-463e-9e59-c8d08c478cd5" />
+
+As shown in above plots:  When "Total Spent" increases, the minimum possible value for your features (Transactions, Avg, Max, Min) also has to increase.
+
+Max & Min Transaction Value vs. Total Spent: A high one-time purchase (Max) or a high starting price (Min) doesn't automatically guarantee a high CLV. Frequency (Total Transactions) seems to be a more reliable indicator of total value in this dataset.
+
+##### Customer Behavior Analysis with RFM Style
+
+<img width="1105" height="315" alt="image" src="https://github.com/user-attachments/assets/a0e5927a-6820-4624-99b0-79620c54fda6" />
+
+Above scatter plots represent a classic RFM (Recency, Frequency, Monetary) framework to analyze Lifetime Value (LTV).
+
+**Recency:** No Correlation. High-value customers (LTV) are just as likely to have shopped 300 days ago as yesterday. Recency isn't a strong predictor of value here.
+
+**Frequency:** Positive Correlation. As transaction counts increase, the "floor" for LTV rises. More frequent shoppers generally result in higher lifetime value, though the spread (variance) is wide.
+
+**Monetary:** Perfect Correlation. This is a straight line because "Total Spent" is likely how you calculated LTV. It’s your most powerful (and perhaps redundant) feature for this specific calculation.
