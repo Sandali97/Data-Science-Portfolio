@@ -76,4 +76,6 @@ Here’s a summary of my key projects. Click on the project name to explore the 
      * Enabled insights for customer experience improvement and potential churn analysis
     
 **7**. **[📌 Customer Lifetiem Value Prediction Using Python](./Customer-Lifetime-Value-Prediction using Python)**
-- **Objective:** 
+- **Objective:** Predict Customer Lifetime Value (LTV): Build a regression model to accurately estimate future value.
+- **Tech Stack:** Python, Pandas, Numpy, Matplotlib, sklearn, Seaborn
+- - **Highlights:**
