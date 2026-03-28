@@ -128,10 +128,21 @@ The dataset is stored in the SAS library `Bank` under the table name `Transactio
       Variables are standardized using **PROC STDIZE** with range normalization.
 - K-means clustering is applied using **PROC FASTCLUS** with 3 clusters.
 - Risk Categorization: Clusters are mapped to fraud risk levels:
-    Cluster 2 → Low Risk
-    Cluster 1 → Medium Risk
-    Cluster 3 → High Risk
-  
+
+  Cluster 2 → Low Risk
+  Cluster 1 → Medium Risk
+  Cluster 3 → High Risk
+
+- Map Clusters
+
+| Cluster | Avg_Amount | LoginAttempts | #Devices | RapidTransactions | Meaning      |
+| ------- | ---------- | ------------- | ------- | --------- | ------------ |
+| 2       | Low        | Low           | Low     | Low       | Normal users |
+| 3       | High       | High          | High    | High      | Suspicious   |
+| 1       | Medium     | Medium        | Medium  | Medium    | Moderate     |
+
+
+
 <img width="1143" height="691" alt="image" src="https://github.com/user-attachments/assets/5368089b-119d-41e5-9c4c-020b45f44476" />
 
 ### Fraud Analysis Results
