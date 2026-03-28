@@ -62,3 +62,15 @@ Here’s a summary of my key projects. Click on the project name to explore the 
       - Applied regression techniques (Ridge, Lasso, Elastic Net, Linear, PCR, PLS)
       - Identified key drivers of Rice, Bread, and Cereal expenditure
       - Compared multiple models to select the best-performing approach
+
+**6**. **[📌 Customer Support Twitter Sentiment Analysis Using NLP](./Customer-Support-on-Twitter-NLP)**
+
+   - **Objective:** Analyze customer support conversations on Twitter and classify sentiment to understand customer satisfaction and identify negative
+     experiences
+   - **Tech Stack:** Python, Pandas, NLTK, VADER, Regex
+   - **Highlights:**
+     * Built an end-to-end NLP pipeline for text preprocessing and sentiment classification
+     * Cleaned and normalized raw tweet data using tokenization, stopword removal, and lemmatization
+     * Applied VADER for rule-based sentiment analysis without requiring labeled data
+     * Categorized customer feedback into Positive, Negative, and Neutral sentiments
+     * Enabled insights for customer experience improvement and potential churn analysis
