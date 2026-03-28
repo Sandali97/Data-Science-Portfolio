@@ -78,4 +78,7 @@ Here’s a summary of my key projects. Click on the project name to explore the 
 **7**. **[📌 Customer Lifetiem Value Prediction Using Python](./Customer-Lifetime-Value-Prediction using Python)**
 - **Objective:** Predict Customer Lifetime Value (LTV): Build a regression model to accurately estimate future value.
 - **Tech Stack:** Python, Pandas, Numpy, Matplotlib, sklearn, Seaborn
-- - **Highlights:**
+- **Highlights:**
+     - Applied log transformation to handle skewness in the response variable and improve model accuracy
+     - Identified perfect correlation between Total Spent and LTV, indicating a highly dominant (and potentially redundant) feature
+     - Random Forest outperformed linear models with an R² of 0.994, showing excellent predictive power
