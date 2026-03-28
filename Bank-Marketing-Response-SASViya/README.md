@@ -2,7 +2,7 @@
 
 #### 📌Project Overview
 
-This project predicts customer responses to a bank’s direct marketing campaign using SAS Model Studio. The goal is to identify customers most likely to subscribe to a term deposit, enabling targeted marketing and improved ROI.
+This project predicts customer responses to a bank’s direct marketing campaign using SAS Model Studio. The goal of this project is to analyze historical marketing campaign data and build a predictive model that estimates the probability of a client subscribing to a term deposit.
 
 - **Objective:** Predict whether a customer will respond (`deposit = yes`) to a marketing campaign.
 - **Type:** Binary Classification / Campaign Response Modeling
