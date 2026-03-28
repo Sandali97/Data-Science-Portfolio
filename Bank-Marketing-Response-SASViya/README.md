@@ -4,7 +4,7 @@
 
 This project predicts customer responses to a bank’s direct marketing campaign using SAS Model Studio. The goal of this project is to analyze historical marketing campaign data and build a predictive model that estimates the probability of a client subscribing to a term deposit.
 
-- **Objective:** Predict whether a customer will respond (`deposit = yes`) to a marketing campaign.
+- **Objective:** Predict whether a customer will respond (`deposit = yes`) to a marketing campaign and identify key contributors.
 - **Type:** Binary Classification / Campaign Response Modeling
 - **Tools:** SAS Model Studio (Viya), CSV Dataset
 
@@ -36,6 +36,9 @@ The dataset contains real data from a Portuguese bank’s marketing campaigns.
 
 **🧾Source:** [Kaggle Bank Marketing Dataset](https://www.kaggle.com/datasets/dvaser/bank-marketing)
 
+#### ✅Dashboard in SAS Visual Analytics
+
+<img width="1585" height="743" alt="image" src="https://github.com/user-attachments/assets/c3fa6a0d-4e6e-4ea9-9761-3d5d1c0cddaa" />
 
 #### ⚙️ SAS Model Studio Workflow
 
@@ -56,7 +59,7 @@ The dataset contains real data from a Portuguese bank’s marketing campaigns.
 
 <img width="640" height="747" alt="image" src="https://github.com/user-attachments/assets/cecd71c4-2803-4cff-a015-1123fccd398c" />
 
-#### 4. Partitioning (Optional)
+#### 4. Partitioning
 - SAS automatically partitions data (70% train, 15% validation, 15% test).
 
 #### 5. Modeling Nodes
