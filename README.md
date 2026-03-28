@@ -75,4 +75,5 @@ Here’s a summary of my key projects. Click on the project name to explore the 
      * Categorized customer feedback into Positive, Negative, and Neutral sentiments
      * Enabled insights for customer experience improvement and potential churn analysis
     
-**7**. **[📌 Customer Lifetiem Value Prediction Using Python](./Customer-Lifetime-Value-Prediction-using-Python)**
+**7**. **[📌 Customer Lifetiem Value Prediction Using Python](./Customer-Lifetime-Value-Prediction using Python)**
+- **Objective:** 
