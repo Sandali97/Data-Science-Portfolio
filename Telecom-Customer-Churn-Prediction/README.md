@@ -12,7 +12,7 @@ Link to the Dataset: https://www.kaggle.com/datasets/blastchar/telco-customer-ch
 No of Observations: 7043 || No of Features: 21
 
 ##### 🎯 Target Variable
-- Churn: Whether customer left (Yes/No)
+- Churn: Customers who left within the last month(Yes/No)
 
 ##### 👤 Customer Demographics
 - Gender – Male/Female
